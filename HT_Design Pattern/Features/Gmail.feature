@@ -1,9 +1,12 @@
-﻿Feature: Gmail
+﻿Feature: Gmail_email_feature
 
-Background: login
+Scenario Outline: login
     Given user in the login page to sign in
-	When user enter username 'aadilmuhammadu@gmail.com' and password 'Test@123'
+	When user enter <username> and <password>
 	Then user will login to the gmail account
+	Examples: 
+		| username                   | password |
+		| aadilmuhammadu@gmail.com   | Test@123 |
 
 
 @tag1

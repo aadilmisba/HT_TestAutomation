@@ -20,8 +20,8 @@ namespace HT_Design_Pattern.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("Gmail")]
-    public partial class GmailFeature
+    [NUnit.Framework.DescriptionAttribute("Gmail_email_feature")]
+    public partial class Gmail_Email_FeatureFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
@@ -35,7 +35,7 @@ namespace HT_Design_Pattern.Features
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "Gmail", null, ProgrammingLanguage.CSharp, featureTags);
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "Gmail_email_feature", null, ProgrammingLanguage.CSharp, featureTags);
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -73,19 +73,37 @@ namespace HT_Design_Pattern.Features
             testRunner.CollectScenarioErrors();
         }
         
-        public virtual void FeatureBackground()
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("login")]
+        [NUnit.Framework.TestCaseAttribute("aadilmuhammadu@gmail.com", "Test@123", null)]
+        public void Login(string username, string password, string[] exampleTags)
         {
+            string[] tagsOfScenario = exampleTags;
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            argumentsOfScenario.Add("username", username);
+            argumentsOfScenario.Add("password", password);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("login", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 3
+this.ScenarioInitialize(scenarioInfo);
 #line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
 #line 4
     testRunner.Given("user in the login page to sign in", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 5
- testRunner.When("user enter username \'aadilmuhammadu@gmail.com\' and password \'Test@123\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When(string.Format("user enter {0} and {1}", username, password), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 6
  testRunner.Then("user will login to the gmail account", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
+            }
+            this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
@@ -97,7 +115,7 @@ namespace HT_Design_Pattern.Features
                     "tag1"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("verify user can send a mail", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 10
+#line 13
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -107,10 +125,7 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 3
-this.FeatureBackground();
-#line hidden
-#line 11
+#line 14
  testRunner.Given("user clicks the compose button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
                 TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
@@ -121,35 +136,35 @@ this.FeatureBackground();
                             "aadilmisba3@gmail.com",
                             "Sample Subject",
                             "Test Mail"});
-#line 12
+#line 15
  testRunner.When("user enters sender mail, subject, and compose text", ((string)(null)), table1, "When ");
 #line hidden
-#line 15
+#line 18
  testRunner.When("user clicks the close and save button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 16
+#line 19
  testRunner.Then("navigate to draft page and open the draft mail", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 17
+#line 20
  testRunner.When("user clicks the send button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 18
+#line 21
  testRunner.Then("navigate to sent page and verify the mail has been sent", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
                 TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
                             "Text"});
                 table2.AddRow(new string[] {
                             "Updated"});
-#line 19
+#line 22
  testRunner.When("user clicks the reply button and send the mail", ((string)(null)), table2, "When ");
 #line hidden
-#line 22
+#line 25
  testRunner.Then("user will drag and drop the mail in the trash folder", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 23
+#line 26
  testRunner.When("user clicks the account button and clicks the Sign out button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 24
+#line 27
  testRunner.Then("user will be navigated to login page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }

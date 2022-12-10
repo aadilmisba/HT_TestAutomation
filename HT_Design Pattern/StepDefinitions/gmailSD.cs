@@ -24,12 +24,17 @@ namespace HT_Design_Pattern.StepDefinitions
             baseTest.BrowserSetup();
             loginPo = new LoginPage();
         }
-
-        [When(@"user enter username '([^']*)' and password '([^']*)'")]
+        [When(@"user enter (.*) and (.*)")]
         public void WhenUserEnterUsernameAndPassword(string p0, string p1)
         {
             loginPo.Login(p0, p1);
         }
+
+        //[When(@"user enter username '([^']*)' and password '([^']*)'")]
+        //public void WhenUserEnterUsernameAndPassword(string p0, string p1)
+        //{
+        //    loginPo.Login(p0, p1);
+        //}
 
         [Then(@"user will login to the gmail account")]
         public void ThenUserWillLoginToTheGmailAccount()

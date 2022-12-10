@@ -39,8 +39,6 @@ namespace HT_Design_Pattern.PageObjects
         //TODO string senderMail, string subject, string textbox parameter values are not used in function
         public void Login(string username, string password)
         {
-            //username = "aadilmuhammadu@gmail.com";
-            //password = "Test@123";
             IJavaScriptExecutor jsExecutor = (IJavaScriptExecutor)BaseTest.webDriver;
             WebDriverWait wait = new WebDriverWait(BaseTest.webDriver, TimeSpan.FromSeconds(50));
             jsExecutor.ExecuteScript("arguments[0].setAttribute('style', 'border:2px solid red; background:yellow')", UsernameField);
