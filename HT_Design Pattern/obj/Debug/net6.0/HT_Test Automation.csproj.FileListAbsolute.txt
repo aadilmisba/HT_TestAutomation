@@ -409,11 +409,12 @@ C:\Users\UMISBAA\Desktop\EPAM\BDD\HT_Test Automation\HT_Design Pattern\HT_Design
 C:\Users\UMISBAA\Desktop\EPAM\BDD\HT_Test Automation\HT_Design Pattern\HT_Design Pattern\obj\Debug\net6.0\HT_Test Automation.pdb
 C:\Users\UMISBAA\Desktop\EPAM\BDD\HT_Test Automation\HT_Design Pattern\HT_Design Pattern\obj\Debug\net6.0\HT_Test Automation.genruntimeconfig.cache
 C:\Users\UMISBAA\Desktop\EPAM\BDD\HT_Test Automation\HT_Design Pattern\HT_Design Pattern\obj\Debug\net6.0\ref\HT_Test Automation.dll
-C:\Users\UMISBAA\Desktop\EPAM\BDD\Test Automation\HT_TestAutomation\HT_Design Pattern\bin\Debug\net6.0\testhost.exe
 C:\Users\UMISBAA\Desktop\EPAM\BDD\Test Automation\HT_TestAutomation\HT_Design Pattern\bin\Debug\net6.0\testhost.dll
 C:\Users\UMISBAA\Desktop\EPAM\BDD\Test Automation\HT_TestAutomation\HT_Design Pattern\bin\Debug\net6.0\LivingDoc.Dtos.dll
 C:\Users\UMISBAA\Desktop\EPAM\BDD\Test Automation\HT_TestAutomation\HT_Design Pattern\bin\Debug\net6.0\LivingDoc.SpecFlowPlugin.dll
 C:\Users\UMISBAA\Desktop\EPAM\BDD\Test Automation\HT_TestAutomation\HT_Design Pattern\bin\Debug\net6.0\TechTalk.SpecFlow.NUnit.SpecFlowPlugin.dll
+C:\Users\UMISBAA\Desktop\EPAM\BDD\Test Automation\HT_TestAutomation\HT_Design Pattern\bin\Debug\net6.0\testhost.exe
+C:\Users\UMISBAA\Desktop\EPAM\BDD\Test Automation\HT_TestAutomation\HT_Design Pattern\bin\Debug\net6.0\Microsoft.TestPlatform.PlatformAbstractions.dll
 C:\Users\UMISBAA\Desktop\EPAM\BDD\Test Automation\HT_TestAutomation\HT_Design Pattern\bin\Debug\net6.0\NUnit3.TestAdapter.dll
 C:\Users\UMISBAA\Desktop\EPAM\BDD\Test Automation\HT_TestAutomation\HT_Design Pattern\bin\Debug\net6.0\NUnit3.TestAdapter.pdb
 C:\Users\UMISBAA\Desktop\EPAM\BDD\Test Automation\HT_TestAutomation\HT_Design Pattern\bin\Debug\net6.0\nunit.engine.dll
@@ -424,7 +425,6 @@ C:\Users\UMISBAA\Desktop\EPAM\BDD\Test Automation\HT_TestAutomation\HT_Design Pa
 C:\Users\UMISBAA\Desktop\EPAM\BDD\Test Automation\HT_TestAutomation\HT_Design Pattern\bin\Debug\net6.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
 C:\Users\UMISBAA\Desktop\EPAM\BDD\Test Automation\HT_TestAutomation\HT_Design Pattern\bin\Debug\net6.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
 C:\Users\UMISBAA\Desktop\EPAM\BDD\Test Automation\HT_TestAutomation\HT_Design Pattern\bin\Debug\net6.0\Microsoft.TestPlatform.AdapterUtilities.dll
-C:\Users\UMISBAA\Desktop\EPAM\BDD\Test Automation\HT_TestAutomation\HT_Design Pattern\bin\Debug\net6.0\Microsoft.TestPlatform.PlatformAbstractions.dll
 C:\Users\UMISBAA\Desktop\EPAM\BDD\Test Automation\HT_TestAutomation\HT_Design Pattern\bin\Debug\net6.0\HT_Test Automation.deps.json
 C:\Users\UMISBAA\Desktop\EPAM\BDD\Test Automation\HT_TestAutomation\HT_Design Pattern\bin\Debug\net6.0\HT_Test Automation.runtimeconfig.json
 C:\Users\UMISBAA\Desktop\EPAM\BDD\Test Automation\HT_TestAutomation\HT_Design Pattern\bin\Debug\net6.0\HT_Test Automation.dll

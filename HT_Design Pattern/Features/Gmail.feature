@@ -1,14 +1,14 @@
 ﻿Feature: Gmail_email_feature
 
+Background: 
+	Given user in the login page to sign in
+	
 Scenario Outline: login
-    Given user in the login page to sign in
 	When user enter <username> and <password>
 	Then user will login to the gmail account
 	Examples: 
 		| username                   | password |
 		| aadilmuhammadu@gmail.com   | Test@123 |
-
-
 @tag1
 Scenario: verify user can send a mail
 	Given user clicks the compose button
@@ -25,4 +25,4 @@ Scenario: verify user can send a mail
 	Then user will drag and drop the mail in the trash folder
 	When user clicks the account button and clicks the Sign out button
 	Then user will be navigated to login page
-
+	
