@@ -1,2 +1,3 @@
 #Ignoring the bin file
+/bin
 /HT_Design Pattern/bin
